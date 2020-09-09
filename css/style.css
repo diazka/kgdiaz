@@ -10,6 +10,8 @@ h1 {
   color: #333;
 }
 
+
+
 /* HEADER */
 header {
   background-color: #333;
@@ -30,6 +32,8 @@ header {
   padding: 14px 20px;
   text-decoration: none; 
 }
+
+
 /* NAVIGATION BAR */
 .navbar {
   overflow: hidden; 
@@ -41,7 +45,7 @@ header {
   display: block; 
   color: white; 
   text-align: center; 
-  padding: 14px 20px; 
+  padding: 8px 20px; 
   text-decoration: none; 
 }
 .navbar ul { /*Style the list */
@@ -57,16 +61,61 @@ header {
   background-color: #ddd; /* Grey background color */
   color: black; /* Black text color */
 }
+.toggle {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 0;
+  text-align: right;
+  box-sizing: border-box;
+  color: white;
+  font-size: 36px;
+  display: none;
+  float: none;
+}
+@media (max-width:930px) {
+  .toggle {
+    display:block;
+  }
+  ul {
+    width: 100%;
+    display: none;
+  }
+  ul li {
+    display: block;
+  }
+  .active {
+    display: block;
+  }
+}
+
 
 /* ABOUT SECTION */
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
-}
-#about {
+.container {
+  display: flex;
+  flex-wrap: wrap;
   padding: 14px 20px;
   display: block;
 }
+.profile-image {
+flex: 50%;
+padding: 20px;
+text-align: center;
+max-width: 100%;
+max-height: 100%;
+display: block;
+float:left;
+}
+.profile-info {
+flex: 50%;
+padding: 20px;
+}
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
 
 /* FOOTER */
 footer {
