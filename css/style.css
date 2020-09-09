@@ -1,24 +1,79 @@
-/* Navigation bar */
+body {
+  font-family: 'Open Sans', sans-serif; /* Check this later! */
+  color: #454d66; /*cambiar color */
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background-color: #333;
+  padding: 0px;
+  margin: 0;
+  overflow: hidden;
+  width: 100%; 
+  position: sticky;
+  z-index: 1;
+}
+#header-left {
+  float: left;
+}
+#header-name {
+  display: block; 
+  color: white;
+  text-align: center; 
+  padding: 14px 20px;
+  text-decoration: none; 
+}
+/* NAVIGATION BAR */
 .navbar {
-    overflow: hidden; /* Hide overflow */
-    background-color: #333; /* Dark background color */
-  }
+  overflow: hidden; 
+  background-color: #333; 
+  float: right;
+}
+.navbar a { /* Style the navigation bar links */
+  float: right; /* Make sure that the links stay side-by-side */
+  display: block; 
+  color: white; 
+  text-align: center; 
+  padding: 14px 20px; 
+  text-decoration: none; 
+}
+.navbar ul { /*Style the list */
+  width: 100%;
+}
+.navbar li { /*Style the elements on the list */
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+}
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #ddd; /* Grey background color */
+  color: black; /* Black text color */
+}
 
-  /* Style the navigation bar links */
-  .navbar a {
-    float: left; /* Make sure that the links stay side-by-side */
-    display: block; /* Change the display to block, for responsive reasons (see below) */
-    color: white; /* White text color */
-    text-align: center; /* Center the text */
-    padding: 14px 20px; /* Add some padding */
-    text-decoration: none; /* Remove underline */
-  }
-  
-  /* Change color on hover/mouse-over */
-  .navbar a:hover {
-    background-color: #ddd; /* Grey background color */
-    color: black; /* Black text color */
-  }
+/* ABOUT SECTION */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+}
+#about {
+  padding: 14px 20px;
+  display: block;
+}
 
-
-/* Footer */
+/* FOOTER */
+footer {
+  text-align: center;
+  width: 100%;
+  background-color: #777;
+  padding: 20px 0px;
+  margin: 0;
+  color: white;
+}
