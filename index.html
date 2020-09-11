@@ -4,49 +4,155 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Karina Diaz</title>
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/ae478f00e7.js" crossorigin="anonymous"></script> -->
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@500&family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     
 	<body>
-		<header>
-            <div id="header-left">
-                <h1 id="header-name">Karina Diaz</h1> <!--AGREGAR LINK A HOMEPAGE? <h1 id="header-name"><a href="#index">Karina Diaz</a></h1>-->
+        <header>
+        <!--NAVIGATION MENU-->
+        <nav>
+            <div class="logo">
+                <h1>Karina Diaz</h1> <!--AGREGAR LINK A HOMEPAGE? <h1 id="header-name"><a href="index.html">Karina Diaz</a></h1>-->
             </div>
-            <nav class="navbar">
-                <div class="toggle">
-					<i class="fa fa-bars menu" aria-hidden="true"></i>
-				</div>
-                <ul> <!--AGREGAR ID-->
-                    <li><a class="active" href="index.html">About</a></li>
-                    <li><a href="publications.html">Publications</a></li>
-                    <li><a href="#inprogress">In Progress</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-			<script type="text/javascript">
-				$(document).ready(function(){
-					$('.menu').click(function(){
-						$('ul').toggleClass('active');
-					})
-				})
-			</script>
+            <ul class="nav-links">
+                <li><a href="index.html">About</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="inprogress.html">In Progress</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <script src="app.js"></script>
         </header>
         
+        <main>
+            <section class="presentation">
+               <div class="introduction">
+                   <div class="intro-text">
+                        <h2>Karina Diaz</h2>
+                        <p>PhD Candidate, Measurement, Evaluation and Statistics, Columbia University</p>
+                   </div>
+                   <div class="cta">
+                       <button class="cta-select">More about me</button>
+                   </div>
+               </div> 
+               <div class="cover">
+                   <img src="images/h1_hero.jpg" alt="Karina Diaz">
+               </div>
+            </section>
+        </main>
+
+
+
+
+
+
+
+
+
+        <!--OPCIÓN 1-->
         <div class="container" id="about">
             <div class="profile-image">
-                <img src="images/profile-image.jpg" alt="Karina Diaz">
+                <img src="images/karinadiaz.jpg" alt="Karina Diaz">
             </div>
             <div class="profile-info">
-                <h1>Karina G. Diaz</h1>
-                <p>Lorem ipsum dolor sit amet</p>
+                <h2>Karina G. Diaz</h2>
+                <p><b>PhD Candidate, Measurement, Evaluation and Statistics, Columbia University</b></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Laoreet sit amet cursus sit amet dictum sit. Orci dapibus ultrices in iaculis nunc sed augue. Id cursus metus aliquam eleifend. Massa ultricies mi quis hendrerit dolor magna eget est. Consectetur a erat nam at lectus urna. Id semper risus in hendrerit gravida rutrum. Id nibh tortor id aliquet. Posuere morbi leo urna molestie. In hac habitasse platea dictumst quisque sagittis purus sit amet. Faucibus nisl tincidunt eget nullam non. Vel pharetra vel turpis nunc eget. In cursus turpis massa tincidunt dui. Cras semper auctor neque vitae tempus quam. Netus et malesuada fames ac turpis. Felis donec et odio pellentesque diam volutpat. Tellus elementum sagittis vitae et.</p>
+            </div>
+            <div class="button">
+                <a href="documents/CVKarinaDiaz.pdf" target="_blank" rel="noopener">Download CV</a>
             </div>
         </div>
 
+    <hr />
+
+        <!--OPCIÓN 2-->
+        <section class="container"> <!--Foto + info principal-->
+            <div>
+                <div class="portrait">
+                    <img src="images/karinadiaz.jpg" alt="Karina Diaz">
+                    <ul class="socialmedia">
+                        <li><a href="contact.html">
+                            <i class="far fa-envelope"></i>
+                        </a></li>
+                        <li><a href="https://www.linkedin.com/in/karina-d%C3%ADaz-y%C3%A1%C3%B1ez-65129867/">
+                            <i class="fab fa-linkedin"></i>
+                        </a></li>
+                        <li><a href="documents/CVKarinaDiaz.pdf">
+                            <i class="far fa-file-pdf"></i>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="title">
+                    <h2>Karina G. Diaz</h2>
+                    <h3>PhD Candidate, Measurement, Evaluation and Statistics</h3>
+                    <h3><a href="https://www.tc.columbia.edu/" target="_blank" rel= "noopener">Teachers College, Columbia University</a></h3>
+                </div>
+            </div>
+
+            <div class="container"> <!---Biografía-->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Laoreet sit amet cursus sit amet dictum sit. Orci dapibus ultrices in iaculis nunc sed augue. Id cursus metus aliquam eleifend. Massa ultricies mi quis hendrerit dolor magna eget est. Consectetur a erat nam at lectus urna. Id semper risus in hendrerit gravida rutrum. Id nibh tortor id aliquet. Posuere morbi leo urna molestie. In hac habitasse platea dictumst quisque sagittis purus sit amet. Faucibus nisl tincidunt eget nullam non. Vel pharetra vel turpis nunc eget. In cursus turpis massa tincidunt dui. Cras semper auctor neque vitae tempus quam. Netus et malesuada fames ac turpis. Felis donec et odio pellentesque diam volutpat. Tellus elementum sagittis vitae et.</p>
+            </div>
+
+            <div class="button">
+                <button type="button" class="button-style"><a href="documents/CVKarinaDiaz.pdf" target="_blank" rel="noopener">Download CV</a></button>
+            </div>
+
+        </section>
+        
+
+
+    <hr />
+
+            <!--OPCIÓN 3-->
+            <section class="container"> <!--Foto + info principal-->
+                <div class="photo-background">
+                    <div class="portrait">
+                        <img src="images/karinadiaz.jpg" alt="Karina Diaz">
+                        <ul class="socialmedia">
+                            <li><a href="contact.html">
+                                <i class="far fa-envelope"></i>
+                            </a></li>
+                            <li><a href="https://www.linkedin.com/in/karina-d%C3%ADaz-y%C3%A1%C3%B1ez-65129867/">
+                                <i class="fab fa-linkedin"></i>
+                            </a></li>
+                            <li><a href="documents/CVKarinaDiaz.pdf">
+                                <i class="far fa-file-pdf"></i>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="title">
+                        <h2>Karina G. Diaz</h2>
+                        <h3>PhD Candidate, Measurement, Evaluation and Statistics</h3>
+                        <h3><a href="https://www.tc.columbia.edu/" target="_blank" rel= "noopener">Teachers College, Columbia University</a></h3>
+                    </div>
+                </div>
+    
+                <div class="container"> <!---Biografía-->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Laoreet sit amet cursus sit amet dictum sit. Orci dapibus ultrices in iaculis nunc sed augue. Id cursus metus aliquam eleifend. Massa ultricies mi quis hendrerit dolor magna eget est. Consectetur a erat nam at lectus urna. Id semper risus in hendrerit gravida rutrum. Id nibh tortor id aliquet. Posuere morbi leo urna molestie. In hac habitasse platea dictumst quisque sagittis purus sit amet. Faucibus nisl tincidunt eget nullam non. Vel pharetra vel turpis nunc eget. In cursus turpis massa tincidunt dui. Cras semper auctor neque vitae tempus quam. Netus et malesuada fames ac turpis. Felis donec et odio pellentesque diam volutpat. Tellus elementum sagittis vitae et.</p>
+                </div>
+    
+                <div class="button">
+                    <button type="button" class="button-style"><a href="documents/CVKarinaDiaz.pdf" target="_blank" rel="noopener">Download CV</a></button>
+                </div>
+    
+            </section>
+
+
+
+            
+       
+
 		<footer>
-			<p>© 2020 by Karina Diaz.</p>
+			<p>&copy;2020 by Karina Diaz. Created by Garci.</p>
 		</footer>
 	</body>
 </html>
