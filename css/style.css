@@ -7,10 +7,27 @@
 
 h1 {
   font-family: 'Encode Sans', sans-serif;
+  color: white;
 }
 
 h2, h3 {
-  color: black; /*CAMBIAR COLOR*/
+  color: gray; /*CAMBIAR COLOR*/
+}
+
+p {
+  color: gray; 
+}
+
+button {
+  font-family: 'Encode Sans', sans-serif;
+}
+
+button a:link {
+  text-decoration: none;
+}
+
+button a:visited {
+  text-decoration: none;
 }
 
 
@@ -75,20 +92,16 @@ nav {
 }
 
 @media screen and (max-width:768px) { /*revisar tamaño*/
-body {
-    overflow: hidden;
-}
-
 .nav-links {
     position: absolute;
     right: 0px;
-    height: 92vh;
-    top: 10vh; /*original: 8vh*/
+    height: 92vh; /*Si se cambia a 60 funciona bien, pero se ve el fondo abajo*/
+    top: 12vh; /*original: 8vh*/
     background-color: gray;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%; /*tamaño del menú*/
+    width: 100%; /*tamaño del menú*/
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
@@ -131,139 +144,169 @@ transform: rotate(45deg) translate(-5px, -6px);
 
 
 
-/* HEADER
-header {
-  background-color: #333;
-  padding: 0px;
-  margin: 0;
-  overflow: hidden;
-  width: 100%; 
-  position: sticky;
-  z-index: 1;
-}
-.header-left {
-  float: left;
-}
-.header-name {
-  display: block; 
-  color: white;
-  text-align: center; 
-  padding: 14px 20px;
-  text-decoration: none; 
-}
-*/
-
-/* ABOUT SECTION - OPCIÓN 1*/
-.container {
+/* MAIN CONTENT */
+.presentation {
   display: flex;
-  flex-wrap: wrap;
-  padding: 14px 20px;
-  display: block;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
 }
-.profile-image {
-flex: 50%;
-padding: 20px;
-text-align: center;
-max-width: 100%;
-max-height: 100%;
-display: block;
-float:left;
+
+.introduction {
+  flex: 1;
+  padding: 0px 0px 0px 80px;
 }
-.profile-info {
-flex: 50%;
-padding: 20px;
+
+.intro-text {
+  font-size: 44px;
+  font-weight: 500;
+  background: linear-gradient(to right, gray, blue); /* Letras con degradé de color */
+  -webkit-background-clip: text; /* Letras con degradé de color */
+  -webkit-text-fill-color: transparent; /* Letras con degradé de color */
 }
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
+
+.intro-text p {
+  margin-top: 5px;
+  font-size: 22px;
+  color: gray;
+}
+
+.cta {
+  padding: 50px 0px 0px 0px;
+}
+
+.cta-about {
+  border: 2px solid gray;
+  background: transparent;
+  color: gray;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cta-about a:visited {
+  color: gray;
+}
+
+.cta-contact {
+  background: gray;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  color: white;
+  margin: 30px 0px 0px 30px;
+}
+
+.cta-contact a:visited {
+  color: white;
+}
+
+.cover {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  /* height: 60vh; *//*AJUSTAR CUANDO ESTÉ LA IMAGEN REAL*/
+}
+
+.cover-img {
+  height: 100%;
+  animation: drop 1.5s ease;
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
-.button {
-  padding: 10px 20px;
-  margin: 0;
-  text-align: left;
-  color: #777;
+
+@media screen and (max-width: 1024px) {
+  .presentation {
+    flex-direction: column-reverse;
+  }
+  .introduction {
+    margin-top: 5vh;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+  }
+  .intro-text h2 {
+    font-size: 30px;
+  }
+  .intro-text p {
+    font-size: 18px;
+  }
+  .cta {
+    padding: 10px 0px 0px 0px;
+  }
+  .cover img {
+    /* height: 80%; */ /*AJUSTAR CUANDO ESTÉ LA IMAGEN REAL*/
+    padding: 10px 0px 0px 0px;
+  }
 }
 
 
 
-
-
-
-
-/* ABOUT SECTION - OPCIÓN 2*/
-.container {
+/* BIOGRAPHY SECTION */
+.biography {
   display: flex;
-  flex-wrap: wrap;
-  padding: 14px 20px;
-  display: block;
-}
-.portrait {
-  padding: 0px 20px;
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-  float:left;
-}
-.title {
-  padding: 0px;
-  margin: 0;
-  text-align: left;
-  display: block;
-}
-.socialmedia {
-  padding: 0px;
-  margin: 0;
-  display: block;
-  font-size: 30px;
-}
-.socialmedia li {
-  list-style: none;
-  display: inline-block;
-  padding: 20px;
-}
-.socialmedia li a {
-  color: #777;
-}
-.socialmedia a:hover {
-  color: black;
-}
-.button-style a {
-  text-decoration: none;
-}
-.button-style a:hover {
-  background-color: #ddd; /* Grey background color */
-  color: black;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  padding: 80px 0px;
 }
 
-
-
-
-/* ABOUT SECTION - OPCIÓN 3*/
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 14px 20px;
-  display: block;
-}
-.photo-background {
-  background-image: url(.../images/h1_hero.jpg);
-  padding: 0px;
-  margin: 0;
-  display: block;
+.biography-description {
+  width: 50%;
+  padding: 0px 40px 0px 40px;
 }
 
+.biography-description h3 {
+  font-size: 36px;
+  padding-bottom: 30px;
+}
 
+.biography-description p {
+  font-size: 16px;
+  padding-bottom: 20px 0px;
+}
 
-
+@media screen and (max-width: 1024px) {
+  .biography {
+    flex-direction: column;
+    
+    align-items: center;
+  }
+  .biography-description {
+    width: 100%;
+    margin-top: 5vh;
+    padding: 0px 0px 0px 0px;
+  }
+  .biography-description h3 {
+    font-size: 24px;
+  }
+  .biography-description p {
+    font-size: 16px;
+    padding: 0px 0px 30px;
+  }
+}
 
 /* FOOTER */
 footer {
   text-align: center;
   width: 100%;
-  background-color: #777;
+  background-color: gray;
   padding: 20px 0px;
   margin: 0;
+}
+
+footer p {
   color: white;
 }
