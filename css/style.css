@@ -5,12 +5,16 @@
   font-family: 'Roboto', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
   font-family: 'Encode Sans', sans-serif;
   color: white;
 }
 
-h2, h3 {
+h2, h3, h4 {
   color: gray; /*CAMBIAR COLOR*/
 }
 
@@ -143,6 +147,29 @@ transform: rotate(45deg) translate(-5px, -6px);
 }
 
 
+/* SCROLL TO TOP BUTTON */
+#up-button {
+  /*display: none; /* Hidden by default ACTIVAR CUANDO SE PUEDA ARREGLAR LA FUNCION EN APP.JS*/
+  position: fixed;
+  height: 60px;
+  width: 60px;
+  bottom: 10px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red;
+  color: white;
+  cursor: pointer; 
+  padding: 15px;
+  border-radius: 50%; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+#up-button:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
 
 /* MAIN CONTENT */
 .presentation {
@@ -184,6 +211,13 @@ transform: rotate(45deg) translate(-5px, -6px);
   height: 50px;
   cursor: pointer;
   font-size: 16px;
+  border-radius: 5px;
+}
+
+.cta-about:hover {
+  background: red;
+  border: red;
+  color: white;
 }
 
 .cta-about a:visited {
@@ -199,6 +233,12 @@ transform: rotate(45deg) translate(-5px, -6px);
   border: none;
   color: white;
   margin: 30px 0px 0px 30px;
+  border-radius: 5px;
+}
+
+.cta-contact:hover {
+  background: red;
+  color: white;
 }
 
 .cta-contact a:visited {
@@ -264,39 +304,122 @@ transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .biography-description {
-  width: 50%;
+  width: 60%;
   padding: 0px 40px 0px 40px;
 }
 
-.biography-description h3 {
+.biography-education {
+  width: 40%;
+  padding: 0px 40px 0px 40px;
+}
+
+.biography-description h3,
+.biography-education h3 {
   font-size: 36px;
   padding-bottom: 30px;
 }
 
-.biography-description p {
+.biography-description p,
+.biography-education p {
   font-size: 16px;
-  padding-bottom: 20px 0px;
+  padding-bottom: 20px;
 }
 
 @media screen and (max-width: 1024px) {
   .biography {
     flex-direction: column;
-    
     align-items: center;
   }
-  .biography-description {
+  .biography-description,
+  .biography-education {
     width: 100%;
     margin-top: 5vh;
     padding: 0px 0px 0px 0px;
   }
-  .biography-description h3 {
+  .biography-description h3,
+  .biography-education h3 {
     font-size: 24px;
   }
-  .biography-description p {
+  .biography-description p,
+  .biography-education p {
     font-size: 16px;
     padding: 0px 0px 30px;
   }
 }
+
+
+
+/* PUBLICATIONS SECTION */
+.publications {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  padding: 80px 0px;
+}
+
+.publications-description {
+  width: 100%; /*cambiar a 50% si quiero que los cuadros estén lado a lado */
+  padding: 40px 40px 40px 40px;
+}
+
+.publications-description h3 {
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+.publications-description h4 {
+  font-size: 16px;
+  padding-bottom: 30px;
+}
+
+.publications-description p {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.cta-pdf {
+  padding: 0px 0px 0px 0px;
+   border: none;
+   background: gray;
+   color: white;
+   width: 50px;
+   height: 25px;
+   cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.cta-pdf:hover {
+  background: red;
+  color: white;
+}
+
+.cta-pdf a:visited {
+  color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .publications {
+    flex-direction: column;
+    align-items: center;
+  }
+  .publications-description {
+    width: 100%;
+    margin-top: 5vh;
+    padding: 0px 0px 0px 0px;
+  }
+  .publications-description h3 {
+    font-size: 24px;
+  }
+  .publications-description p {
+    font-size: 16px;
+    padding: 0px 0px 30px;
+  }
+}
+
+
 
 /* FOOTER */
 footer {
