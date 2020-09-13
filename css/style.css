@@ -174,10 +174,14 @@ transform: rotate(45deg) translate(-5px, -6px);
 /* MAIN CONTENT */
 .presentation {
   display: flex;
-  width: 90%;
+  width: 100%;
   margin: auto;
-  min-height: 80vh;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 40px;
+  min-height: 90vh;
   align-items: center;
+  background-color: #e2e2e2; /*Cambiar dependiendo de la foto*/
 }
 
 .introduction {
@@ -188,9 +192,9 @@ transform: rotate(45deg) translate(-5px, -6px);
 .intro-text {
   font-size: 44px;
   font-weight: 500;
-  background: linear-gradient(to right, gray, blue); /* Letras con degradé de color */
-  -webkit-background-clip: text; /* Letras con degradé de color */
-  -webkit-text-fill-color: transparent; /* Letras con degradé de color */
+  /*background: linear-gradient(to right, gray, blue); /* Letras con degradé de color */
+  /*-webkit-background-clip: text; /* Letras con degradé de color */
+  /*-webkit-text-fill-color: transparent; /* Letras con degradé de color */
 }
 
 .intro-text p {
@@ -249,12 +253,17 @@ transform: rotate(45deg) translate(-5px, -6px);
   flex: 1;
   display: flex;
   justify-content: center;
-  /* height: 60vh; *//*AJUSTAR CUANDO ESTÉ LA IMAGEN REAL*/
+  width: 100%;
+  height: auto;
 }
 
-.cover-img {
-  height: 100%;
+.cover img {
   animation: drop 1.5s ease;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @keyframes drop {
@@ -349,7 +358,45 @@ transform: rotate(45deg) translate(-5px, -6px);
 
 
 
-/* PUBLICATIONS SECTION */
+/* PUBLICATIONS & IN PROGRESS SECTION */
+.publications-title {
+  display: flex;
+  width:100%;
+  margin: auto;
+  padding-left: 60px;
+  padding-right: 60px;
+  min-height: 90vh;
+  align-items: center;
+  /*background-image: url(/images/publications.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 90%;*/
+}
+
+.publications-title img {
+  width: 100%;
+  height: auto;
+}
+
+.inprogress-title {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  padding-left: 60px;
+  padding-right: 60px;
+  min-height: 90vh;
+  align-items: center;
+  /*background-image: url(/images/inprogress.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 90%;*/
+}
+
+.inprogress-title img {
+  width: 100%;
+  height: auto;
+}
+
 .publications {
   display: flex;
   flex-wrap: wrap;
@@ -396,7 +443,8 @@ transform: rotate(45deg) translate(-5px, -6px);
   color: white;
 }
 
-.cta-pdf a:visited {
+.cta-pdf a:visited, 
+.cta-pdf a:link {
   color: white;
 }
 

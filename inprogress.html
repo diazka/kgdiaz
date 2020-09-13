@@ -2,16 +2,17 @@
 <html lang="en">
 	<head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Karina Diaz</title>
-        <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/ae478f00e7.js" crossorigin="anonymous"></script> -->
         <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@500&family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style2.css"> <!--Cambiar!!!!-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     
 	<body>
-		<nav>
+        <header>
+        <!--NAVIGATION MENU-->
+        <nav>
             <div class="logo">
                 <h1>Karina Diaz</h1> <!--AGREGAR LINK A HOMEPAGE? <h1 id="header-name"><a href="index.html">Karina Diaz</a></h1>-->
             </div>
@@ -20,6 +21,8 @@
                 <li><a href="publications.html">Publications</a></li>
                 <li><a href="inprogress.html">In Progress</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li></li>
+                <li></li>
             </ul>
             <div class="menu">
                 <div class="line1"></div>
@@ -28,13 +31,64 @@
             </div>
         </nav>
         <script src="app.js"></script>
-
-
-
-        <header>
         </header>
+                
+        <!--SCROLL TO TOP BUTTON-->
+        <button onclick="topFunction()" id="up-button" title="Go to top">Top</button>
+
+        <main>
+            <div class="inprogress-title">
+                <img src="images/inprogress.jpg" alt="In Progress">
+                <div class="introduction">
+                    <div class="intro-text">
+                        <h2>Papers in Progress</h2>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!--PUBLICATIONS SECTION-->
+        <section class="publications">
+            <div class="publications-description">
+                <h3>[Under review] Exploratory analyses for missing data in meta-analyses</h3>
+                <h4>Jacob M. Schauer, Karina Diaz, Therese D. Pigott</h4>
+                <p>While systematic reviews of substance abuse interventions hold great promise for informing what works for whom and under what 
+                    conditions, such reviews must contend with missing data. Missing data can limit the accuracy of statistical analyses or the 
+                    relevance of the evidence base and deciding how to handle missing data depends on why it is missing in the first place. In 
+                    this tutorial, we examine methods for exploring missingness in a dataset in ways that can help identify the sources and 
+                    extent of missingness, as well as clarify gaps in evidence. We demonstrate these methods on a meta-analysis of substance 
+                    abuse interventions for adolescents to highlight areas where the evidence less clear and where statistical adjustments 
+                    taken by the original authors appear to have been necessary.</p>
+                <button class="cta-pdf"><a href="">+ Info</a></button>
+                <button class="cta-pdf"><a href="">PDF</a></button>
+            </div>
+            <div class="publications-description">
+                <h3>[In progress] On the bias of complete- and available-case meta-regressions with missing covariates</h3>
+                <h4>Jacob M. Schauer, Karina Diaz, Jihyun Lee, Therese D. Pigott</h4>
+                <p></p>
+                <button class="cta-pdf"><a href="">+ Info</a></button>
+                <button class="cta-pdf"><a href="">PDF</a></button>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
         
 
 
+
+            
+       
+
+		<footer>
+			<p>&copy;2020 by Karina Diaz. Created by Garci.</p>
+		</footer>
 	</body>
 </html>
