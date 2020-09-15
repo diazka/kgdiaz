@@ -11,22 +11,33 @@ html {
 
 h1 {
   font-family: 'Encode Sans', sans-serif;
-  color: white;
+  color: white; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+}
+
+h1 a {
+  text-decoration: none;
+  color: white; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+}
+
+h1 a:visited {
+  text-decoration: none;
+  color: white; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 }
 
 h2, h3, h4 {
-  color: gray; /*CAMBIAR COLOR*/
+  color: gray; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 }
 
 p {
-  color: gray; 
+  color: gray; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 }
 
 button {
-  font-family: 'Encode Sans', sans-serif;
+  outline: none;
 }
 
-button a:link {
+button a {
+  font-family: 'Encode Sans', sans-serif;
   text-decoration: none;
 }
 
@@ -42,11 +53,11 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 12vh; /*original: 8vh*/
-  background-color: gray;
+  background-color: gray; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 }
 
 .logo {
-  color: white;
+  color: white; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 20px;
@@ -63,7 +74,7 @@ nav {
 }
 
 .nav-links a {
-  color: white;
+  color: white; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   text-decoration: none;
   letter-spacing: 3px;
   font-size: 14px;
@@ -71,7 +82,7 @@ nav {
 }
 
 .nav-links a:hover {
-  color: red;
+  color: red; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   font-weight: bold;
   font-size: 16px;
 }
@@ -84,7 +95,7 @@ nav {
 .menu div {
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: white; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -101,7 +112,7 @@ nav {
     right: 0px;
     height: 92vh; /*Si se cambia a 60 funciona bien, pero se ve el fondo abajo*/
     top: 12vh; /*original: 8vh*/
-    background-color: gray;
+    background-color: gray; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,15 +169,16 @@ transform: rotate(45deg) translate(-5px, -6px);
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: red;
-  color: white;
+  background-color: red; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  color: white; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   cursor: pointer; 
   padding: 15px;
   border-radius: 50%; /* Rounded corners */
   font-size: 18px; /* Increase font size */
 }
+
 #up-button:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: #555; /* Add a dark-grey background on hover */ /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 }
 
 
@@ -181,7 +193,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   padding-bottom: 40px;
   min-height: 90vh;
   align-items: center;
-  background-color: #e2e2e2; /*Cambiar dependiendo de la foto*/
+  background-color: #e2e2e2; /*Cambiar dependiendo de la foto*/ /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 }
 
 .introduction {
@@ -200,7 +212,7 @@ transform: rotate(45deg) translate(-5px, -6px);
 .intro-text p {
   margin-top: 5px;
   font-size: 22px;
-  color: gray;
+  color: gray; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 }
 
 .cta {
@@ -208,9 +220,9 @@ transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .cta-about {
-  border: 2px solid gray;
-  background: transparent;
-  color: gray;
+  border: 2px solid gray; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  background-color: transparent;
+  color: gray; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   width: 150px;
   height: 50px;
   cursor: pointer;
@@ -219,34 +231,34 @@ transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .cta-about:hover {
-  background: red;
-  border: red;
-  color: white;
+  background-color: red; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  border: red; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  color: white; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 }
 
 .cta-about a:visited {
-  color: gray;
+  color: gray; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 }
 
 .cta-contact {
-  background: gray;
+  background-color: gray; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   width: 150px;
   height: 50px;
   cursor: pointer;
   font-size: 16px;
   border: none;
-  color: white;
+  color: white; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   margin: 30px 0px 0px 30px;
   border-radius: 5px;
 }
 
 .cta-contact:hover {
-  background: red;
-  color: white;
+  background-color: red; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  color: white; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 }
 
 .cta-contact a:visited {
-  color: white;
+  color: white; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 }
 
 .cover {
@@ -304,7 +316,7 @@ transform: rotate(45deg) translate(-5px, -6px);
 
 
 /* BIOGRAPHY SECTION */
-.biography {
+.container {
   display: flex;
   justify-content: space-between;
   width: 90%;
@@ -312,45 +324,45 @@ transform: rotate(45deg) translate(-5px, -6px);
   padding: 80px 0px;
 }
 
-.biography-description {
+.container-description {
   width: 60%;
   padding: 0px 40px 0px 40px;
 }
 
-.biography-education {
+.container-details {
   width: 40%;
   padding: 0px 40px 0px 40px;
 }
 
-.biography-description h3,
-.biography-education h3 {
+.container-description h3,
+.container-details h3 {
   font-size: 36px;
   padding-bottom: 30px;
 }
 
-.biography-description p,
-.biography-education p {
+.container-description p,
+.container-details p {
   font-size: 16px;
   padding-bottom: 20px;
 }
 
 @media screen and (max-width: 1024px) {
-  .biography {
+  .container {
     flex-direction: column;
     align-items: center;
   }
-  .biography-description,
-  .biography-education {
+  .container-description,
+  .container-details {
     width: 100%;
     margin-top: 5vh;
     padding: 0px 0px 0px 0px;
   }
-  .biography-description h3,
-  .biography-education h3 {
+  .container-description h3,
+  .container-details h3 {
     font-size: 24px;
   }
-  .biography-description p,
-  .biography-education p {
+  .container-description p,
+  .container-details p {
     font-size: 16px;
     padding: 0px 0px 30px;
   }
@@ -373,7 +385,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   opacity: 90%;*/
 }
 
-.publications-title img {
+.publications-title img { /* REVISAR!!!! DEJAR ESTO + LA IMAGEN EN HTML O VOLVER A ACTIVAR LO ANTERIOR*/
   width: 100%;
   height: auto;
 }
@@ -392,7 +404,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   opacity: 90%;*/
 }
 
-.inprogress-title img {
+.inprogress-title img { /* REVISAR!!!! DEJAR ESTO + LA IMAGEN EN HTML O VOLVER A ACTIVAR LO ANTERIOR*/
   width: 100%;
   height: auto;
 }
@@ -428,24 +440,24 @@ transform: rotate(45deg) translate(-5px, -6px);
 
 .cta-pdf {
   padding: 0px 0px 0px 0px;
-   border: none;
-   background: gray;
-   color: white;
-   width: 50px;
-   height: 25px;
-   cursor: pointer;
+  border: none;
+  background-color: gray; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  color: white; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  width: 50px;
+  height: 25px;
+  cursor: pointer;
   font-size: 16px;
   border-radius: 5px;
 }
 
 .cta-pdf:hover {
-  background: red;
-  color: white;
+  background-color: red; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  color: white; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 }
 
 .cta-pdf a:visited, 
 .cta-pdf a:link {
-  color: white;
+  color: white; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 }
 
 @media screen and (max-width: 1024px) {
@@ -467,17 +479,42 @@ transform: rotate(45deg) translate(-5px, -6px);
   }
 }
 
+/* CONTACT SECTION */
+.icon-info {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.icon-info a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.icon-info a:hover {
+  color: red; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+}
+
+.icon-info a:visited {
+  text-decoration: none;
+}
+
+.icon {
+  width: 60px;
+  height: auto;
+  padding-right: 10px;
+}
 
 
 /* FOOTER */
 footer {
   text-align: center;
   width: 100%;
-  background-color: gray;
+  background-color: gray; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   padding: 20px 0px;
   margin: 0;
 }
 
 footer p {
-  color: white;
+  color: white; /* CAMBIAR COLOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 }

@@ -11,10 +11,11 @@
     
 	<body>
         <header>
+
         <!--NAVIGATION MENU-->
         <nav>
             <div class="logo">
-                <h1>Karina Diaz</h1> <!--AGREGAR LINK A HOMEPAGE? <h1 id="header-name"><a href="index.html">Karina Diaz</a></h1>-->
+                <h1><a href="index.html">Karina Diaz</a></h1>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">About</a></li>
@@ -41,11 +42,11 @@
             <section class="presentation">
                <div class="introduction">
                    <div class="intro-text">
-                        <h2>Karina Diaz</h2>
-                        <p>PhD Candidate, Measurement, Evaluation and Statistics,<br>Columbia University</p>
+                       <h2>Karina Diaz</h2>
+                       <p>PhD Candidate, Measurement, Evaluation and Statistics,<br>Columbia University</p>
                    </div>
                    <div class="cta">
-                        <a href="#biography"><button class="cta-about">More about me</a></button>
+                       <button class="cta-about"><a href="#biography">More about me</a></button>
                        <button class="cta-contact"><a href="contact.html">Contact me</a></button>
                    </div>
                </div> 
@@ -56,8 +57,8 @@
         </main>
 
         <!--BIOGRAPHY SECTION-->
-        <section class="biography" id="biography">
-            <div class="biography-description">
+        <section class="container" id="biography">
+            <div class="container-description">
                 <h3>About me</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Eros in cursus turpis massa. Sed vulputate odio ut enim. Lacus sed turpis tincidunt id aliquet. Eget gravida cum sociis 
@@ -66,10 +67,21 @@
                     Dui accumsan sit amet nulla facilisi morbi. Malesuada proin libero nunc consequat interdum. Aliquam malesuada bibendum arcu 
                     vitae elementum curabitur vitae nunc. Id interdum velit laoreet id donec ultrices tincidunt.
                 </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Eros in cursus turpis massa. Sed vulputate odio ut enim. Lacus sed turpis tincidunt id aliquet. Eget gravida cum sociis 
+                    natoque penatibus et. Feugiat nibh sed pulvinar proin. Dui ut ornare lectus sit amet est placerat in. Ultricies tristique 
+                    nulla aliquet enim tortor. Massa sapien faucibus et molestie ac. Aliquam malesuada bibendum arcu vitae elementum curabitur. 
+                    Dui accumsan sit amet nulla facilisi morbi. Malesuada proin libero nunc consequat interdum. Aliquam malesuada bibendum arcu 
+                    vitae elementum curabitur vitae nunc. Id interdum velit laoreet id donec ultrices tincidunt.
+                </p>
+                <div class="cta">
+                    <button class="cta-about"><a href="documents/CVKarinaDiaz.pdf" target="_blank">Download my CV</a></button>
+                    <button class="cta-contact"><a href="contact.html">Contact me</a></button>
+                </div>
             </div>
-            <div class="biography-education">
+            <div class="container-details"> <!--PARA AGREGAR OTRA SECCIÓN CORTA, CREAR NUEVO DIV-->
                 <h3>Education</h3>
-                <div class="education">
+                <div>
                     <h4>PhD (c) in Measurement, Evaluation and Statistics</h4>
                     <p>Columbia University</p>
                     <h4>MA in Economics and Education</h4>
@@ -79,22 +91,8 @@
                 </div>
             </div>
         </section>
-
-
-
-
-
-
-
-
-
-        
-
-
-
-            
+         
        
-
 		<footer>
 			<p>&copy;2020 by Karina Diaz. Created by Garci.</p>
 		</footer>
