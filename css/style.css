@@ -429,13 +429,18 @@ transform: rotate(45deg) translate(-5px, -6px);
   padding: 80px 0px;
 }
 
+.publications h2 {
+  color: #38618C;;
+  font-size: 30px;
+}
+
 .publications-description {
   width: 100%; /*cambiar a 50% si quiero que los cuadros estén lado a lado */
   padding: 20px 40px 20px 40px;
 }
 
 .publications-description h3 {
-  font-size: 30px;
+  font-size: 25px;
   padding-bottom: 20px;
 }
 
