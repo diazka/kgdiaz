@@ -3,7 +3,6 @@ const navSlide = () => {
     const menu = document.querySelector('.menu');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
-
     menu.addEventListener('click', () => {
         //Toggle Nav
         nav.classList.toggle('nav-active');
@@ -20,15 +19,13 @@ const navSlide = () => {
          menu.classList.toggle('toggle');
     });
 }
-
 navSlide()
 
 
 // SCROLL TO TOP BUTTON
-//Get the button:
 const myButton = document.getElementById('up-button');
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function scrollFunction() {scrollFunction()};
+window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     myButton.style.display = "block";
@@ -36,7 +33,6 @@ function scrollFunction() {
     myButton.style.display = "none";
   }
 }
-
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0; // For Safari

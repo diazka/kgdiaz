@@ -41,11 +41,18 @@ button a {
   text-decoration: none;
 }
 
-button a:visited {
+a {
   text-decoration: none;
+  }
+
+a:hover {
+  
 }
 
-
+a:visited {
+  text-decoration: none;
+  color: gray;
+}
 
 /* NAVIGATION BAR */
 nav {
@@ -181,7 +188,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   cursor: pointer; 
   padding: 15px;
   border-radius: 50%; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  font-size: 35px;
 }
 
 #up-button:hover {
