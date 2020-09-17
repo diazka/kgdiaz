@@ -24,7 +24,7 @@ h1 a:visited {
 
 h2 {
   font-family: 'Encode Sans', sans-serif;
-  color: #5d5c61;
+  color: #38618C;
 }
 
 h3 {
@@ -109,7 +109,6 @@ nav {
   body {
     overflow-x: hidden;
   }
-
   .nav-links {
     position: absolute;
     right: 0px;
@@ -123,11 +122,9 @@ nav {
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
-
   .nav-links li {
       opacity: 0;
   }
-
   .menu {
       display: block;
   }
@@ -208,7 +205,7 @@ transform: rotate(45deg) translate(-5px, -6px);
 .intro-text {
   font-size: 44px;
   font-weight: 500;
-  /*background: linear-gradient(to right, gray, blue); /* Letras con degradé de color */
+  /*background: linear-gradient(to right, #38618C, #5d5c61); /* Letras con degradé de color */
   /*-webkit-background-clip: text; /* Letras con degradé de color */
   /*-webkit-text-fill-color: transparent; /* Letras con degradé de color */
 }
@@ -327,7 +324,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   justify-content: space-between;
   width: 90%;
   margin: auto;
-  padding: 80px 0px;
+  padding: 80px 0px 140px 0px;
 }
 
 .container-description {
@@ -380,7 +377,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   }
   .container-description p,
   .container-details p {
-    font-size: 16px;
+    font-size: 14px;
     padding: 0px 0px 20px;
   }
 }
@@ -398,7 +395,6 @@ transform: rotate(45deg) translate(-5px, -6px);
   display: flex;
   width:100%;
   margin: auto;
-  margin-bottom: 20px;
   padding-left: 60px;
   padding-right: 60px;
   min-height: 90vh;
@@ -407,11 +403,6 @@ transform: rotate(45deg) translate(-5px, -6px);
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-/*.publications-title img { 
-  width: 100%;
-  height: auto;
-}*/ /* REVISAR!!!! DEJAR ESTO + LA IMAGEN EN HTML O VOLVER A ACTIVAR LO ANTERIOR*/
 
 .publications-title h2 {
   color: #F7F5FB;
@@ -422,7 +413,6 @@ transform: rotate(45deg) translate(-5px, -6px);
   display: flex;
   width: 100%;
   margin: auto;
-  margin-bottom: 20px;
   padding-left: 60px;
   padding-right: 60px;
   min-height: 90vh;
@@ -431,11 +421,6 @@ transform: rotate(45deg) translate(-5px, -6px);
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-/*.inprogress-title img { 
-  width: 100%;
-  height: auto;
-}*/ /* REVISAR!!!! DEJAR ESTO + LA IMAGEN EN HTML O VOLVER A ACTIVAR LO ANTERIOR*/
 
 .inprogress-title h2 {
   color: #F7F5FB;
@@ -448,7 +433,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   justify-content: space-between;
   width: 90%;
   margin: auto;
-  padding: 20px 0px;
+  padding: 80px 0px 100px 0px;
 }
 
 .publications h2 {
@@ -457,6 +442,10 @@ transform: rotate(45deg) translate(-5px, -6px);
   text-transform: uppercase;
   padding: 15px;
   letter-spacing: 3px;
+}
+
+.publications-container {
+  padding: 0px 0px 40px 0px;
 }
 
 .publications-description {
@@ -481,7 +470,6 @@ transform: rotate(45deg) translate(-5px, -6px);
 
 .publications-description p {
   font-size: 16px;
-  padding-bottom: 10px;
 }
 
 .cta-pdf {
@@ -509,17 +497,25 @@ transform: rotate(45deg) translate(-5px, -6px);
     flex-direction: column;
     align-items: center;
   }
+  /*.publications-title, .inprogress-title, .contact-title {  /*AJUSTAR IMAGEN DE FONDO DEFINITIVA AL TAMAÑO MOBILE
+    background-size: 100%;
+  }*/
+  .publications h2 {
+    font-size: 25px;
+  }
   .publications-description {
     width: 100%;
     margin-top: 5vh;
-    padding: 10px 10px 10px 10px;
-    
+    padding: 10px;
   }
   .publications-description h3 {
-    font-size: 24px;
+    font-size: 20px;
+  }
+  .publications-description h4 {
+    font-size: 16px;
   }
   .publications-description p {
-    font-size: 16px;
+    font-size: 14px;
     padding: 0px 0px 20px;
   }
 }
@@ -576,11 +572,11 @@ transform: rotate(45deg) translate(-5px, -6px);
 footer {
   text-align: center;
   width: 100%;
-  background-color: #EAEAEB;
+  background-color: #5d5c61;
   padding: 40px 0px 40px 0px;
   margin: 0;
 }
 
 footer p {
-  color: #5d5c61;
+  color: #EAEAEB;
 }
