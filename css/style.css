@@ -60,7 +60,7 @@ nav {
 
 .logo {
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   font-size: 20px;
 }
 
@@ -76,7 +76,7 @@ nav {
 
 .nav-links a {
   color: #F7F5FB;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-size: 14px;
 }
 
@@ -353,6 +353,8 @@ transform: rotate(45deg) translate(-5px, -6px);
 .container-details h3 {
   font-size: 36px;
   padding-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .container-description p,
@@ -452,6 +454,9 @@ transform: rotate(45deg) translate(-5px, -6px);
 .publications h2 {
   color: #38618C;;
   font-size: 30px;
+  text-transform: uppercase;
+  padding: 15px;
+  letter-spacing: 3px;
 }
 
 .publications-description {
@@ -460,6 +465,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   border-left: 8px solid #38618C;
   background-color: #EAEAEB;
   margin: 5px;
+  border-radius: 5px;
 }
 
 .publications-description h3 {
