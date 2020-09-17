@@ -457,6 +457,9 @@ transform: rotate(45deg) translate(-5px, -6px);
 .publications-description {
   width: 100%; /* Change to 50% to have 2 columns */
   padding: 20px 40px 20px 40px;
+  border-left: 8px solid #38618C;
+  background-color: #EAEAEB;
+  margin: 5px;
 }
 
 .publications-description h3 {
@@ -503,14 +506,15 @@ transform: rotate(45deg) translate(-5px, -6px);
   .publications-description {
     width: 100%;
     margin-top: 5vh;
-    padding: 0px 0px 0px 0px;
+    padding: 10px 10px 10px 10px;
+    
   }
   .publications-description h3 {
     font-size: 24px;
   }
   .publications-description p {
     font-size: 16px;
-    padding: 0px 0px 30px;
+    padding: 0px 0px 20px;
   }
 }
 
