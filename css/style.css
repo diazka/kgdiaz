@@ -106,12 +106,16 @@ nav {
 }
 
 @media screen and (max-width:768px) { /*revisar tamaño*/
-.nav-links {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-links {
     position: absolute;
     right: 0px;
     height: 92vh; /*Si se cambia a 60 funciona bien, pero se ve el fondo abajo*/
     top: 12vh; /*original: 8vh*/
-    background-color: #5d5c61 ;
+    background-color: #38618C ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,7 +125,7 @@ nav {
   }
 
   .nav-links li {
-      opacity: 1;
+      opacity: 0;
   }
 
   .menu {
@@ -156,17 +160,11 @@ nav {
 transform: rotate(45deg) translate(-5px, -6px);  
 }
 
-/* .sticky {                     /* ACTIVAR SI APLICA
-  position: fixed;
-  top: 0;
-  width: 100%;
-}*/
-
 
 
 /* SCROLL TO TOP BUTTON */
 #up-button {
-  /*display: none; /* Hidden by default ACTIVAR CUANDO SE PUEDA ARREGLAR LA FUNCION EN APP.JS*/
+  display: none;
   position: fixed;
   height: 60px;
   width: 60px;
@@ -218,10 +216,11 @@ transform: rotate(45deg) translate(-5px, -6px);
 .intro-text p {
   margin-top: 5px;
   font-size: 22px;
+  padding-bottom: 20px;
 }
 
-.cta { /* ES NECESARIO ARREGLAR LOS BOTONES EN MODO RESPONSIVO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-  padding: 50px 0px 0px 0px;
+.cta {
+  padding: 30px 0px 0px 0px;
 }
 
 .cta-about {
@@ -283,7 +282,7 @@ transform: rotate(45deg) translate(-5px, -6px);
 @keyframes drop {
   0% {
     opacity: 0;
-    transform: translateY(-80px);
+    transform: translateY(-30px);
   }
   100% {
     opacity: 1;
@@ -307,7 +306,12 @@ transform: rotate(45deg) translate(-5px, -6px);
     font-size: 18px;
   }
   .cta {
-    padding: 10px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+  .cta-about, .cta-contact {
+    display: inline-block;
+    margin: 20px 10px 20px 10px;
+    align-items: center;
   }
   .cover img {
     /* height: 80%; */ /*AJUSTAR CUANDO ESTÉ LA IMAGEN REAL*/
@@ -375,7 +379,13 @@ transform: rotate(45deg) translate(-5px, -6px);
   .container-description p,
   .container-details p {
     font-size: 16px;
-    padding: 0px 0px 30px;
+    padding: 0px 0px 20px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .container {
+    padding-top: 20px;
   }
 }
 
@@ -391,15 +401,19 @@ transform: rotate(45deg) translate(-5px, -6px);
   padding-right: 60px;
   min-height: 90vh;
   align-items: center;
-  /*background-image: url(/images/publications.jpg);
+  background-image: url(/images/publications.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 90%;*/
 }
 
-.publications-title img { /* REVISAR!!!! DEJAR ESTO + LA IMAGEN EN HTML O VOLVER A ACTIVAR LO ANTERIOR*/
+/*.publications-title img { 
   width: 100%;
   height: auto;
+}*/ /* REVISAR!!!! DEJAR ESTO + LA IMAGEN EN HTML O VOLVER A ACTIVAR LO ANTERIOR*/
+
+.publications-title h2 {
+  color: #F7F5FB;
+  text-shadow: 2px 2px #5d5c61;
 }
 
 .inprogress-title {
@@ -411,15 +425,19 @@ transform: rotate(45deg) translate(-5px, -6px);
   padding-right: 60px;
   min-height: 90vh;
   align-items: center;
-  /*background-image: url(/images/inprogress.jpg);
+  background-image: url(/images/inprogress.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 90%;*/
 }
 
-.inprogress-title img { /* REVISAR!!!! DEJAR ESTO + LA IMAGEN EN HTML O VOLVER A ACTIVAR LO ANTERIOR*/
+/*.inprogress-title img { 
   width: 100%;
   height: auto;
+}*/ /* REVISAR!!!! DEJAR ESTO + LA IMAGEN EN HTML O VOLVER A ACTIVAR LO ANTERIOR*/
+
+.inprogress-title h2 {
+  color: #F7F5FB;
+  text-shadow: 2px 2px #5d5c61;
 }
 
 .publications {
@@ -437,7 +455,7 @@ transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .publications-description {
-  width: 100%; /*cambiar a 50% si quiero que los cuadros estén lado a lado */
+  width: 100%; /* Change to 50% to have 2 columns */
   padding: 20px 40px 20px 40px;
 }
 
@@ -497,6 +515,30 @@ transform: rotate(45deg) translate(-5px, -6px);
 }
 
 /* CONTACT SECTION */
+.contact-title {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  min-height: 90vh;
+  align-items: center;
+  background-image: url(/images/contact.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*.contact-title img { 
+  width: 100%;
+  height: auto;
+}*/ /* REVISAR!!!! DEJAR ESTO + LA IMAGEN EN HTML O VOLVER A ACTIVAR LO ANTERIOR*/
+
+.contact-title h2 {
+  color: #F7F5FB;
+  text-shadow: 2px 2px #5d5c61;
+}
+
 .icon-info {
   display: flex;
   justify-content: right;
@@ -519,12 +561,13 @@ transform: rotate(45deg) translate(-5px, -6px);
 }
 
 
+
 /* FOOTER */
 footer {
   text-align: center;
   width: 100%;
   background-color: #EAEAEB;
-  padding: 20px 0px;
+  padding: 40px 0px 40px 0px;
   margin: 0;
 }
 

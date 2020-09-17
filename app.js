@@ -3,6 +3,7 @@ const navSlide = () => {
     const menu = document.querySelector('.menu');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
+
     menu.addEventListener('click', () => {
         //Toggle Nav
         nav.classList.toggle('nav-active');
@@ -12,7 +13,7 @@ const navSlide = () => {
             if (link.style.animation) {
                 link.style.animation = '';
             } else {
-                link.style.animation = `navLinkFade 0.5s ease forward ${index / 7 + 1.5}s`
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
             }
          })
          //Menu animation
@@ -27,7 +28,7 @@ const myButton = document.getElementById('up-button');
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
     myButton.style.display = "block";
   } else {
     myButton.style.display = "none";

@@ -11,34 +11,33 @@
     
 	<body>
         <header>
-
-        <!--NAVIGATION MENU-->
-        <nav>
-            <div class="logo">
-                <h1><a href="index.html">Karina Diaz</a></h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">About</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="inprogress.html">In Progress</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <div class="menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
-        <script src="app.js"></script>
+            <!--NAVIGATION MENU-->
+            <nav id="navbar">
+                <div class="logo">
+                    <h1><a href="index.html">Karina Diaz</a></h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="inprogress.html">In Progress</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
         </header>
                         
         <!--SCROLL TO TOP BUTTON-->
         <button onclick="topFunction()" id="up-button" title="Go to top">Top</button>
 
         <main>
-            <div class="inprogress-title"> <!--CAMBIAR NOMBRE Y CREAR EN CSS-->
+            <div class="contact-title">
+                 <!--<img src="images/contact.jpg" alt="In Progress">-->
                 <div class="introduction">
                     <div class="intro-text">
                         <h2>Contact Karina</h2>
@@ -55,9 +54,7 @@
                     <img src="images/icons/mail.svg" class="icon" alt="Email">
                     <a href="mailto:kgd2118@tc.columbia.edu">kgd2118@tc.columbia.edu</a>
                 </div>
-                
             </div>
-
             <div class="container-details">
                 <h3>Stay connected!</h3>
                 <div>
@@ -65,13 +62,12 @@
                     <a href="https://orcid.org/0000-0002-8205-6862" target="_blank"><img src="images/icons/orcid.png" class="icon" alt="ORCID"></a>
                 </div>
             </div>
-
         </section>
-
-
 
 		<footer>
 			<p>&copy; 2020 by Karina Diaz. Created by Garci.</p>
-		</footer>
+        </footer>
+        
+        <script src="app.js"></script>
 	</body>
 </html>
