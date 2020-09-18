@@ -99,13 +99,13 @@ nav {
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width:1024px) { /*revisar tamaño*/
+@media screen and (max-width:1024px) {
   .nav-links {
       width: 50%;
   }
 }
 
-@media screen and (max-width:768px) { /*revisar tamaño*/
+@media screen and (max-width:768px) {
   body {
     overflow-x: hidden;
   }
@@ -337,6 +337,12 @@ transform: rotate(45deg) translate(-5px, -6px);
   padding: 0px 40px 0px 40px;
 }
 
+.container-info li {
+  color: #5d5c61;
+  list-style-position: inside; /*CAMBIAR SI EL INTERÉS ES MUY LARGO */
+  list-style-type: circle
+}
+
 .container-info a {
   color: #5d5c61;
 }
@@ -377,7 +383,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   }
   .container-description p,
   .container-details p {
-    font-size: 14px;
+    font-size: 16px;
     padding: 0px 0px 20px;
   }
 }
@@ -534,11 +540,6 @@ transform: rotate(45deg) translate(-5px, -6px);
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-/*.contact-title img { 
-  width: 100%;
-  height: auto;
-}*/ /* REVISAR!!!! DEJAR ESTO + LA IMAGEN EN HTML O VOLVER A ACTIVAR LO ANTERIOR*/
 
 .contact-title h2 {
   color: #F7F5FB;
