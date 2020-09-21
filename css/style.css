@@ -406,6 +406,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   min-height: 90vh;
   align-items: center;
   background-image: url(/images/publications.jpg);
+  background-color: #38618C;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; /*DECIDIR SI DEJAR O NO*/
@@ -425,6 +426,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   min-height: 90vh;
   align-items: center;
   background-image: url(/images/inprogress.jpg);
+  background-color: #38618C;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; /*DECIDIR SI DEJAR O NO*/
@@ -445,7 +447,7 @@ transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .publications h2 {
-  color: #38618C;;
+  color: #38618C;
   font-size: 30px;
   text-transform: uppercase;
   padding: 15px;
@@ -539,6 +541,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   min-height: 90vh;
   align-items: center;
   background-image: url(/images/contact.jpg);
+  background-color: #38618C;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; /*DECIDIR SI DEJAR O NO*/
