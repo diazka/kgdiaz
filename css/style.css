@@ -408,6 +408,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   background-image: url(/images/publications.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed; /*DECIDIR SI DEJAR O NO*/
 }
 
 .publications-title h2 {
@@ -426,6 +427,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   background-image: url(/images/inprogress.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed; /*DECIDIR SI DEJAR O NO*/
 }
 
 .inprogress-title h2 {
@@ -456,10 +458,10 @@ transform: rotate(45deg) translate(-5px, -6px);
 
 .publications-description {
   width: 100%; /* Change to 50% to have 2 columns */
-  padding: 20px 40px 20px 40px;
+  padding: 20px 40px 20px 20px;
   border-left: 8px solid #38618C;
   background-color: #EAEAEB;
-  margin: 5px;
+  margin: 10px;
   border-radius: 5px;
 }
 
@@ -539,6 +541,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   background-image: url(/images/contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed; /*DECIDIR SI DEJAR O NO*/
 }
 
 .contact-title h2 {
