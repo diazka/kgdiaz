@@ -8,6 +8,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -110,6 +111,7 @@ nav {
 @media screen and (max-width:768px) {
   body {
     overflow-x: hidden;
+    width: 100%;
   }
   .nav-links {
     position: absolute;
