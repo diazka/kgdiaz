@@ -85,7 +85,7 @@ nav {
 }
 
 .nav-links a:hover {
-  color: #C18C5D;
+  color: #ef9c1c;
   font-weight: bold;
   font-size: 16px;
 }
@@ -236,8 +236,8 @@ transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .cta-about:hover {
-  background-color: #C18C5D;
-  border: 2px solid #C18C5D;
+  background-color: #ef9c1c;
+  border: 2px solid #ef9c1c;
   color: #F7F5FB; 
 }
 
@@ -256,8 +256,8 @@ transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .cta-contact:hover {
-  border: 2px solid #C18C5D; 
-  background-color: #C18C5D; 
+  border: 2px solid #ef9c1c; 
+  background-color: #ef9c1c; 
   color: #F7F5FB;
 }
 
@@ -355,7 +355,7 @@ transform: rotate(45deg) translate(-5px, -6px);
 
 .container-info a:hover {
   text-decoration: underline;
-  color: #C18C5D;
+  color: #ef9c1c;
 }
 
 .container-description h3,
@@ -498,8 +498,8 @@ transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .cta-pdf:hover {
-  border: 2px solid #C18C5D;
-  background-color: #C18C5D;
+  border: 2px solid #ef9c1c;
+  background-color: #ef9c1c;
   color: #F7F5FB; 
 }
 
@@ -570,7 +570,7 @@ transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .icon-info a:hover {
-  color: #C18C5D;
+  color: #ef9c1c;
 }
 
 .icon {
