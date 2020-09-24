@@ -28,12 +28,12 @@ h1 a:visited {
 
 h2 {
   font-family: 'Encode Sans', sans-serif;
-  color: #38618C;
+  color: #546C8D;
 }
 
 h3 {
   font-family: 'Encode Sans', sans-serif;
-  color: #38618C;
+  color: #546C8D;
 }
 
 h4 {
@@ -59,7 +59,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 12vh; /*original: 8vh*/
-  background-color: #38618C ;
+  background-color: #546C8D ;
 }
 
 .logo {
@@ -85,7 +85,7 @@ nav {
 }
 
 .nav-links a:hover {
-  color: #ef9c1c;
+  color: #F7882F;
   font-weight: bold;
   font-size: 16px;
 }
@@ -120,7 +120,7 @@ nav {
     right: 0px;
     height: 92vh; /*Si se cambia a 60 funciona bien, pero se ve el fondo abajo*/
     top: 12vh; /*original: 8vh*/
-    background-color: #38618C ;
+    background-color: #546C8D ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -176,7 +176,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #38618C;
+  background-color: #546C8D;
   color: white; 
   opacity: 50%;
   padding: 0px;
@@ -211,7 +211,7 @@ transform: rotate(45deg) translate(-5px, -6px);
 .intro-text {
   font-size: 44px;
   font-weight: 500;
-  /*background: linear-gradient(to right, #38618C, #5d5c61); /* Letras con degradé de color */
+  /*background: linear-gradient(to right, #546C8D, #5d5c61); /* Letras con degradé de color */
   /*-webkit-background-clip: text; /* Letras con degradé de color */
   /*-webkit-text-fill-color: transparent; /* Letras con degradé de color */
 }
@@ -227,27 +227,27 @@ transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .cta-about {
-  border: 2px solid #38618C;
+  border: 2px solid #546C8D;
   background-color: transparent;
-  color: #38618C;
+  color: #546C8D;
   padding: 15px 12px;
   font-size: 16px;
   border-radius: 5px;
 }
 
 .cta-about:hover {
-  background-color: #ef9c1c;
-  border: 2px solid #ef9c1c;
+  background-color: #F7882F;
+  border: 2px solid #F7882F;
   color: #F7F5FB; 
 }
 
 .cta-about a:visited {
-  color: #38618C;
+  color: #546C8D;
 }
 
 .cta-contact {
-  border: 2px solid#38618C;
-  background-color: #38618C;
+  border: 2px solid#546C8D;
+  background-color: #546C8D;
   color: #F7F5FB;
   padding: 15px 25px;
   font-size: 16px;
@@ -256,8 +256,8 @@ transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .cta-contact:hover {
-  border: 2px solid #ef9c1c; 
-  background-color: #ef9c1c; 
+  border: 2px solid #F7882F; 
+  background-color: #F7882F; 
   color: #F7F5FB;
 }
 
@@ -355,7 +355,7 @@ transform: rotate(45deg) translate(-5px, -6px);
 
 .container-info a:hover {
   text-decoration: underline;
-  color: #ef9c1c;
+  color: #F7882F;
 }
 
 .container-description h3,
@@ -412,7 +412,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   min-height: 90vh;
   align-items: center;
   background-image: url(/images/publications.jpg);
-  background-color: #38618C;
+  background-color: #546C8D;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; /*DECIDIR SI DEJAR O NO*/
@@ -432,7 +432,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   min-height: 90vh;
   align-items: center;
   background-image: url(/images/inprogress.jpg);
-  background-color: #38618C;
+  background-color: #546C8D;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; /*DECIDIR SI DEJAR O NO*/
@@ -453,7 +453,7 @@ transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .publications h2 {
-  color: #38618C;
+  color: #546C8D;
   font-size: 30px;
   text-transform: uppercase;
   padding: 15px;
@@ -467,7 +467,7 @@ transform: rotate(45deg) translate(-5px, -6px);
 .publications-description {
   width: 100%; /* Change to 50% to have 2 columns */
   padding: 20px 40px 20px 20px;
-  border-left: 8px solid #38618C;
+  border-left: 8px solid #546C8D;
   background-color: #EAEAEB;
   margin: 10px;
   border-radius: 5px;
@@ -476,7 +476,7 @@ transform: rotate(45deg) translate(-5px, -6px);
 .publications-description h3 {
   font-size: 25px;
   padding-bottom: 0px;
-  color: #38618C;
+  color: #546C8D;
 }
 
 .publications-description h4 {
@@ -490,16 +490,16 @@ transform: rotate(45deg) translate(-5px, -6px);
 
 .cta-pdf {
   padding: 4px 6px;
-  border: 2px solid #38618C;
-  background-color: #38618C;
+  border: 2px solid #546C8D;
+  background-color: #546C8D;
   color: #F7F5FB;
   font-size: 16px;
   border-radius: 5px;
 }
 
 .cta-pdf:hover {
-  border: 2px solid #ef9c1c;
-  background-color: #ef9c1c;
+  border: 2px solid #F7882F;
+  background-color: #F7882F;
   color: #F7F5FB; 
 }
 
@@ -547,7 +547,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   min-height: 90vh;
   align-items: center;
   background-image: url(/images/contact.jpg);
-  background-color: #38618C;
+  background-color: #546C8D;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; /*DECIDIR SI DEJAR O NO*/
@@ -570,7 +570,7 @@ transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .icon-info a:hover {
-  color: #ef9c1c;
+  color: #F7882F;
 }
 
 .icon {
