@@ -307,7 +307,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   .cta {
     padding: 0px 0px 0px 0px;
   }
-  .cta-about, .cta-contact {
+  .cta-about, .cta-contact, .cta-about2 {
     display: inline-block;
     margin: 20px 10px 20px 10px;
     align-items: center;
