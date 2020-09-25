@@ -530,10 +530,12 @@ transform: rotate(45deg) translate(-5px, -6px);
   }
   .publications-title {
     background-image: url("../images/publications2.png");
+    background-attachment: scroll;
   }
   .inprogress-title {
     background-image: url("../images/inprogress2.png");
-  }
+    background-attachment: scroll;
+ }
   .publications h2 {
     font-size: 25px;
   }
@@ -601,6 +603,7 @@ transform: rotate(45deg) translate(-5px, -6px);
 @media screen and (max-width: 1024px) {
   .contact-title {
     background-image: url("../images/contact2.png");
+    background-attachment: scroll;
   }
   .container-description a {
     font-size: 16px;
