@@ -21,6 +21,10 @@ h1 {
   color: #F7F5FB;
 }
 
+h1 a {
+  text-decoration: none;
+}
+
 h1 a:visited {
   text-decoration: none;
   color: #F7F5FB;
@@ -306,10 +310,11 @@ transform: rotate(45deg) translate(-5px, -6px);
   }
   .cta {
     padding: 0px 0px 0px 0px;
+    text-align: center;
   }
   .cta-about, .cta-contact, .cta-about2 {
     display: inline-block;
-    margin: 20px 10px 20px 10px;
+    margin: 10px 10px 10px 10px;
     align-items: center;
   }
   .cover img {
@@ -411,7 +416,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   background-color: #546C8D;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; /*DECIDIR SI DEJAR O NO*/;
+  background-attachment: fixed;
 }
 
 .publications-title h2 {
@@ -431,7 +436,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   background-color: #546C8D;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; /*DECIDIR SI DEJAR O NO*/
+  background-attachment: fixed;
 }
 
 .inprogress-title h2 {
@@ -572,7 +577,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   background-color: #546C8D;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; /*DECIDIR SI DEJAR O NO*/
+  background-attachment: fixed;
 }
 
 .contact-title h2 {
@@ -625,4 +630,10 @@ footer {
 
 footer p {
   color: #EAEAEB;
+}
+
+@media screen and (max-width: 1024px) {
+  footer p {
+    font-size: 14px;
+  }
 }
