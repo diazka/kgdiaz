@@ -22,6 +22,24 @@ const navSlide = () => {
 navSlide()
 
 
+
+//STICKY NAVBAR
+window.onscroll = function() {myFunction()}; // When the user scrolls the page, execute myFunction
+
+var navbar = document.getElementById("navbar"); // Get the navbar
+
+var sticky = navbar.offsetTop; // Get the offset position of the navbar
+
+function myFunction() { // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+
+
 // SCROLL TO TOP BUTTON
 const myButton = document.getElementById('up-button');
 // When the user scrolls down 20px from the top of the document, show the button
