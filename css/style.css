@@ -82,6 +82,7 @@ nav {
   color: #F7F5FB;
   letter-spacing: 2px;
   font-size: 14px;
+  transition: 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -118,7 +119,7 @@ nav {
   .nav-links {
     position: absolute;
     right: 0px;
-    height: 92vh; /*Si se cambia a 60 funciona bien, pero se ve el fondo abajo*/
+    height: 92vh;
     top: 12vh; /*original: 8vh*/
     background-color: #546C8D ;
     display: flex;
@@ -202,6 +203,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   min-height: 90vh;
   align-items: center;
   background-color: #EAEAEB;
+  /*background: linear-gradient(to right, #b4a796, #eee9e1); /* Letras con idegradé de color */
 }
 
 .introduction {
@@ -276,11 +278,13 @@ transform: rotate(45deg) translate(-5px, -6px);
 
 .cover img {
   animation: drop 1.5s ease;
-  width: 100%;
+  width: 80%;
   height: auto;
+  margin-top: 40px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 50%;
 }
 
 @keyframes drop {
@@ -320,8 +324,9 @@ transform: rotate(45deg) translate(-5px, -6px);
     align-items: center;
   }
   .cover img {
-    /* height: 80%; */ /*AJUSTAR CUANDO ESTÉ LA IMAGEN REAL*/
-    padding: 10px 0px 0px 0px;
+    height: 80%;
+    padding: 0px;
+    margin-top: 50px;
   }
 }
 
