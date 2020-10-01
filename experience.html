@@ -17,15 +17,15 @@
         <header>
             <!--NAVIGATION MENU-->
             <nav class="sticky" id="navbar">
-                <div class="logo">
+                <div class="logo" id="logo">
                     <h1><a href="index.html">Karina G. Diaz</a></h1>
                 </div>
                 <ul class="nav-links">
                     <li><a href="index.html">About</a></li>
                     <li><a href="publications.html">Publications</a></li>
                     <li><a href="inprogress.html">In Progress</a></li>
+                    <li><a href="experience.html">Experience</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li></li>
                     <li></li>
                 </ul>
                 <div class="menu">
@@ -35,45 +35,48 @@
                 </div>
             </nav>
         </header>
-                        
+        
         <!--SCROLL TO TOP BUTTON-->
         <button onclick="topFunction()" id="up-button" title="Go to top">Top</button>
 
+        <!--MAIN CONTENT-->
         <main>
-            <div class="contact-title">
+            <div class="experience-title">
                 <div class="introduction">
                     <div class="intro-text">
-                        <h2>Contact Karina</h2>
+                        <h2>Research & Professional Experience </h2>
+                    </div>
+                    <div class="cta">
+                        <a href="#experience" class="cta-about2">Learn more</a>
                     </div>
                 </div>
             </div>
         </main>
 
-        <!--MAIN CONTENT-->
-        <section class="container">
-            <div class="container-description">
-                <h3>Contact information</h3>
-                <div class="icon-info">
-                    <img src="images/icons/mail.png" class="icon" alt="Email">
-                    <a href="mailto:kgd2118@tc.columbia.edu">kgd2118@tc.columbia.edu</a>
-                </div>
-                <div class="icon-info">
-                    <img src="images/icons/location.png" class="icon" alt="Location">
-                    <a href="https://goo.gl/maps/9364cdNmUGeT7GPT6" target="_blank">Northwestern University
-                        <br>Institute for Policy Research
-                        <br>617 Library Place
-                        <br>Evanston, IL 60201</a>
-                </div>
-            </div>
-            <div class="container-details">
-                <h3>Stay connected!</h3>
-                <div>
-                    <a href="https://www.linkedin.com/in/karina-diaz-yanez-65129867/" target="_blank"><img src="images/icons/linkedin.png" class="icon" alt="LinkedIn"></a>
-                    <a href="https://orcid.org/0000-0002-8205-6862" target="_blank"><img src="images/icons/orcid.png" class="icon" alt="ORCID"></a>
-                </div>
-            </div>
+        <!--BIOGRAPHY SECTION-->
+        <section class="container" id="experience">
+            <div id="timeline-content">
+                <ul class="timeline">
+                  <li class="event" data-date="2020 - Present">
+                    <h3>Institute for Policy Research, <br>Northwestern University</h3>
+                    <p>Graduate Research Assistant</p>
+                  </li>
+                  <li class="event" data-date="2017 - Present">
+                    <h3>Center for Technology and School Change, Teachers College, <br>Columbia University</h3>
+                    <p>Graduate Research Assistant</p>    
+                  </li>
+                  <li class="event" data-date="2017 - 2020">
+                    <h3>Center for Advanced Research in Education, <br>Universidad de Chile</h3>
+                    <p></p> <p>Research Assistant</p>    
+                  </li>
+                  <li class="event" data-date="2016 - 2017">
+                    <h3>DEMRE, <br>Universidad de Chile</h3>
+                    <p>Researcher at Analysis and Development Department</p>
+                  </li>
+                </ul>
+              </div>
         </section>
-
+       
 		<footer>
 			<p>&copy; 2020 by Karina G. Diaz. Created by Garci.</p>
         </footer>

@@ -299,6 +299,10 @@ transform: rotate(45deg) translate(-5px, -6px);
   border-radius: 50%;
 }
 
+.main-image { /*SAFARI*/
+  object-fit: contain;
+}
+
 @keyframes drop {
   0% {
     opacity: 0;
@@ -582,6 +586,103 @@ transform: rotate(45deg) translate(-5px, -6px);
   .publications-description p {
     font-size: 14px;
     padding: 0px 0px 20px;
+  }
+}
+
+/* EXPERIENCE SECTION */
+.experience-title {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  margin-top: 80px;
+  padding-left: 60px;
+  padding-right: 60px;
+  min-height: 90vh;
+  align-items: center;
+  background-image: url("../images/inprogress.png");   /*CAMBIAR FOTO!!!!!!!!!*/
+  background-color: #546C8D;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.experience-title h2 {
+  color: #F7F5FB;
+  text-shadow: 2px 2px #5d5c61;
+}
+
+.container {    /* DUPLICADO, BORRAR SI NO VOY CAMBIAR EL NOMBRE  ----- revisar desde aquí en adelante*/
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  padding: 120px 0px 140px 0px;
+}
+
+.container-description {
+  width: 60%;
+  padding: 0px 40px 0px 40px;
+}
+
+.container-details {
+  width: 40%;
+  padding: 0px 40px 0px 40px;
+}
+
+.container-info li {
+  color: #5d5c61;
+  list-style-position: inside; /*CAMBIAR SI EL INTERÉS ES MUY LARGO */
+  list-style-type: circle
+}
+
+.container-info a {
+  color: #ED7D3A;
+}
+
+.container-info a:hover {
+  text-decoration: underline;
+  color: #ED7D3A;
+}
+
+.container-description h3,
+.container-details h3 {
+  font-size: 36px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.container-description p,
+.container-details p {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-description,
+  .container-details {
+    width: 100%;
+    margin-top: 5vh;
+    padding: 0px 0px 0px 0px;
+  }
+  .container-description h3,
+  .container-details h3 {
+    font-size: 24px;
+  }
+  .container-description p,
+  .container-details p {
+    font-size: 16px;
+    padding: 0px 0px 20px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .container {
+    padding-top: 70px;
   }
 }
 
