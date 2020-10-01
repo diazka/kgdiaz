@@ -300,6 +300,7 @@ transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .main-image { /*SAFARI*/
+  align-self: flex-start;
   object-fit: contain;
 }
 
