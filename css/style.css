@@ -207,7 +207,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   display: flex;
   width: 100%;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 60px;
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 40px;
@@ -301,7 +301,6 @@ transform: rotate(45deg) translate(-5px, -6px);
 
 .main-image { /*SAFARI*/
   align-self: flex-start;
-  
 }
 
 @keyframes drop {
@@ -433,7 +432,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   display: flex;
   width:100%;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 60px;
   padding-left: 60px;
   padding-right: 60px;
   min-height: 90vh;
@@ -454,7 +453,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   display: flex;
   width: 100%;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 60px;
   padding-left: 60px;
   padding-right: 60px;
   min-height: 90vh;
@@ -595,7 +594,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   display: flex;
   width: 100%;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 60px;
   padding-left: 60px;
   padding-right: 60px;
   min-height: 90vh;
@@ -692,7 +691,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   display: flex;
   width: 100%;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 60px;
   margin-bottom: 20px;
   padding-left: 60px;
   padding-right: 60px;
