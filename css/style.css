@@ -638,6 +638,10 @@ transform: rotate(45deg) translate(-5px, -6px);
   color: #546C8D;
 }
 
+.timeline-content a {
+  color: #546C8D;
+}
+
 .timeline-content a:hover {
   text-decoration: underline;
   color: #ED7D3A;
@@ -723,7 +727,7 @@ transform: rotate(45deg) translate(-5px, -6px);
     left: -115px;
     text-align: right;
     color: #5d5c61;
-    font-size: 14px;
+    font-size: 12px;
   }
   .event::after {
     position: absolute;
