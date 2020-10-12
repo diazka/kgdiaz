@@ -652,7 +652,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   padding: 40px;
   margin: 0px;
   background-color: #EAEAEB;
-  border-bottom: 1px dashed #F7F5FB;
+  border-bottom: 4px dashed #F7F5FB;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
