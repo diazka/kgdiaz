@@ -59,7 +59,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 12vh; /*original: 8vh*/
-  background-color: #546C8D ;
+  background-color: #546C8D;
+  z-index: 99;
 }
 
 .logo {
@@ -104,23 +105,23 @@ nav {
   transition: all 0.3s ease;
 }
 
-.sticky { /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
   position: fixed;
   top: 0;
   width: 100%;
 }
 
-.sticky .presentation { /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky .presentation {
   padding-top: 60px;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1280px) {
   .nav-links {
       width: 50%;
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1000px) {
   body {
     position: relative;
     overflow-x: hidden;
@@ -214,7 +215,6 @@ transform: rotate(45deg) translate(-5px, -6px);
   min-height: 100vh;
   align-items: center;
   background-color: #EAEAEB;
-  /*background: linear-gradient(to right, #b4a796, #eee9e1); /* Letras con idegradé de color */
 }
 
 .introduction {
@@ -225,9 +225,6 @@ transform: rotate(45deg) translate(-5px, -6px);
 .intro-text {
   font-size: 44px;
   font-weight: 500;
-  /*background: linear-gradient(to right, #546C8D, #5d5c61); /* Letras con degradé de color */
-  /*-webkit-background-clip: text; /* Letras con degradé de color */
-  /*-webkit-text-fill-color: transparent; /* Letras con degradé de color */
 }
 
 .intro-text p {
@@ -599,7 +596,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   padding-right: 60px;
   min-height: 100vh;
   align-items: center;
-  background-image: url("../images/inprogress.png");   /*CAMBIAR FOTO!!!!!!!!!*/
+  background-image: url("../images/experience.png");
   background-color: #546C8D;
   background-repeat: no-repeat;
   background-size: cover;
@@ -612,97 +609,132 @@ transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .experience {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-  margin: auto;
-  padding: 40px 0px 40px 0px;
-}
-
-.timeline-content {
-  text-align: center;
-  margin: 0px;
-  padding: 40px 0px 40px 0px;
+  position: relative;
+  max-width: 100%;
+  margin: 0;
 }
 
 .timeline {
+  text-align: center;
+  margin: 0px;
+  padding: 40px 40px 40px 40px;
+}
+
+.timeline-content {
   border-left: 8px solid #546C8D;
-  border-bottom-right-radius: 8px;
-  border-top-right-radius: 8px;
-  margin: 50px auto;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  margin: 40px;
+  margin-left: 200px;
   position: relative;
   line-height: 1.4em;
   list-style: none;
   text-align: left;
-  max-width: 30%;
+  max-width: 100%;
+
+}
+
+.timeline-content a:visited {
+  color: #546C8D;
+}
+
+.timeline-content a:hover {
+  text-decoration: underline;
+  color: #ED7D3A;
 }
 
 .event {
-  border-bottom: 1px dashed fade(gray, 10%);
-  padding-bottom: (50px * 0.5);
-  margin-bottom: 50px;  
   position: relative;
+  padding: 40px;
+  margin: 0px;
+  background-color: #EAEAEB;
+  border-bottom: 1px dashed #F7F5FB;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
-.event:last-of-type { 
-    padding-bottom: 0;
-    margin-bottom: 0; 
-    border: none;      
-}
-
-.event::before, .event::after {
-    position: absolute;
-    display: block;
-    top: 0;
+.event h3 {
+  font-size: 25px;
+  padding-bottom: 10px;
 }
 
 .event::before {
-    left: (((120px * 0.6) + 50px + 4px + 11px + (4px * 2)) * 1.5) * -1;    
-    color: fade(white, 40%);    
-    content: attr(data-date);
-    text-align: right;
-    font-weight: 100;    
-    font-size: 0.9em;
-    min-width: 120px;
+  position: absolute;
+  display: block;
+  content: attr(data-date);
+  left: -150px;
+  text-align: right;
+  color: #5d5c61;
+  font-size: 16px;
+  font-weight: bolder;
 }
 
 .event::after {
-    box-shadow: 0 0 0 4px fade(white,100%);    
-    left: (50px + 4px + (11px * 0.35)) * -1;        
-    background: lighten(white, 5%);    
-    border-radius: 50%;  
-    height: 11px;
-    width: 11px;
-    content: "";
-    top: 5px;
+  position: absolute;
+  display: block;
+  content: "";
+  left: -15px;
+  background: #546C8D;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  top: 40px;
 }
 
 @media screen and (max-width: 1024px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .container-description,
-  .container-details {
-    width: 100%;
-    margin-top: 5vh;
-    padding: 0px 0px 0px 0px;
-  }
-  .timeline h3,
+  .experience-title {
+    background-image: url("../images/experience2.png");
+    background-size: cover;
+    background-attachment: scroll;
+ }
   .timeline h3 {
-    font-size: 24px;
+    font-size: 20px;
+  }
+  .timeline h4 {
+    font-size: 16px;
   }
   .timeline p,
   .timeline p {
-    font-size: 16px;
+    font-size: 14px;
     padding: 0px 0px 20px;
   }
 }
 
-@media screen and (max-width:768px) {
-  .container {
-    padding-top: 70px;
+@media screen and (max-width:767px) {
+  .timeline h3 {
+    font-size: 16px;
+  }
+  .timeline h4 {
+    font-size: 14px;
+  }
+  .timeline-content {
+    margin-left: 80px;
+    min-width: 65vw;
+    line-height: 1.4em;
+  }
+  .event {
+    padding: 20px;
+    margin: 0px;
+  }
+  .event::before {
+    position: absolute;
+    display: block;
+    content: attr(data-date);
+    left: -115px;
+    text-align: right;
+    color: #5d5c61;
+    font-size: 14px;
+  }
+  .event::after {
+    position: absolute;
+    display: block;
+    content: "";
+    left: -15px;
+    background: #546C8D;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    top: 20px;
   }
 }
 
@@ -768,7 +800,7 @@ footer {
   text-align: center;
   width: 100%;
   background-color: #5d5c61;
-  padding: 80px 0px 40px 0px;
+  padding: 60px 0px 40px 0px;
   margin: 0;
 }
 
