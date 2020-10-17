@@ -1,3 +1,3 @@
 # kgdiaz.com
  
-Last update: 09-27-2020
+Last update: 10-16-2020
