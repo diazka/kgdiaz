@@ -375,6 +375,10 @@ transform: rotate(45deg) translate(-5px, -6px);
   color: #ED7D3A;
 }
 
+.container-info a:visited {
+  color: #ED7D3A;
+}
+
 .container-info a:hover {
   text-decoration: underline;
   color: #ED7D3A;
@@ -525,6 +529,20 @@ transform: rotate(45deg) translate(-5px, -6px);
 .publications-description h4 {
   font-size: 16px;
   padding-bottom: 30px;
+  color: #5d5c61
+}
+
+h4 a {
+  color: #5d5c61;
+}
+
+h4 a:visited {
+  color: #5d5c61;
+}
+
+h4 a:hover {
+  text-decoration: underline;
+  color: #ED7D3A;
 }
 
 .publications-description p {
@@ -634,11 +652,11 @@ transform: rotate(45deg) translate(-5px, -6px);
 
 }
 
-.timeline-content a:visited {
+.timeline-content a {
   color: #546C8D;
 }
 
-.timeline-content a {
+.timeline-content a:visited {
   color: #546C8D;
 }
 
@@ -777,8 +795,13 @@ transform: rotate(45deg) translate(-5px, -6px);
   color: #5d5c61;
 }
 
+.icon-info a:visited {
+  color: #5d5c61;
+}
+
 .icon-info a:hover {
   color: #ED7D3A;
+  text-decoration: underline;
 }
 
 .icon {
