@@ -438,7 +438,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   padding-right: 60px;
   min-height: 100vh;
   align-items: center;
-  background-image: url("../images/publications.png");
+  background-image: url("../images/publications.jpg");
   background-color: #546C8D;
   background-repeat: no-repeat;
   background-size: cover;
@@ -459,7 +459,7 @@ transform: rotate(45deg) translate(-5px, -6px);
   padding-right: 60px;
   min-height: 100vh;
   align-items: center;
-  background-image: url("../images/inprogress.png");
+  background-image: url("../images/inprogress.jpg");
   background-color: #546C8D;
   background-repeat: no-repeat;
   background-size: cover;
@@ -575,12 +575,12 @@ h4 a:hover {
     align-items: center;
   }
   .publications-title {
-    background-image: url("../images/publications2.png");
+    background-image: url("../images/publications2.jpg");
     background-size: cover;
     background-attachment: scroll;
   }
   .inprogress-title {
-    background-image: url("../images/inprogress2.png");
+    background-image: url("../images/inprogress2.jpg");
     background-size: cover;
     background-attachment: scroll;
  }
@@ -614,7 +614,7 @@ h4 a:hover {
   padding-right: 60px;
   min-height: 100vh;
   align-items: center;
-  background-image: url("../images/experience.png");
+  background-image: url("../images/experience.jpg");
   background-color: #546C8D;
   background-repeat: no-repeat;
   background-size: cover;
@@ -705,7 +705,7 @@ h4 a:hover {
 
 @media screen and (max-width: 1024px) {
   .experience-title {
-    background-image: url("../images/experience2.png");
+    background-image: url("../images/experience2.jpg");
     background-size: cover;
     background-attachment: scroll;
  }
@@ -771,7 +771,7 @@ h4 a:hover {
   padding-right: 60px;
   min-height: 100vh;
   align-items: center;
-  background-image: url("../images/contact.png");
+  background-image: url("../images/contact.jpg");
   background-color: #546C8D;
   background-repeat: no-repeat;
   background-size: cover;
@@ -812,7 +812,7 @@ h4 a:hover {
 
 @media screen and (max-width: 1024px) {
   .contact-title {
-    background-image: url("../images/contact2.png");
+    background-image: url("../images/contact2.jpg");
     background-size: cover;
     background-attachment: scroll;
   }
