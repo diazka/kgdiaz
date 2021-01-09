@@ -214,7 +214,11 @@ transform: rotate(45deg) translate(-5px, -6px);
   padding-bottom: 40px;
   min-height: 100vh;
   align-items: center;
+  /*background-image: url("../images/25101.jpg");*/
   background-color: #EAEAEB;
+  /*background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;*/
 }
 
 .introduction {
