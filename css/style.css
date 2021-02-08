@@ -573,6 +573,19 @@ h4 a:hover {
   color: #F7F5FB;
 }
 
+.cta-nopdf {
+  padding: 4px 6px;
+  border: 2px solid #5d5c61;
+  background-color: #5d5c61;
+  color: #F7F5FB;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.cta-nopdf {
+  cursor: default;
+}
+
 @media screen and (max-width: 1024px) {
   .publications {
     flex-direction: column;
