@@ -580,9 +580,7 @@ h4 a:hover {
   color: #F7F5FB;
   font-size: 16px;
   border-radius: 5px;
-}
-
-.cta-nopdf {
+  opacity: 50%;
   cursor: default;
 }
 
