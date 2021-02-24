@@ -132,7 +132,7 @@ nav {
     right: 0px;
     height: 92vh;
     top: 12vh; /*original: 8vh*/
-    background-color: #546C8D ;
+    background-color: #546C8D;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,6 +142,9 @@ nav {
   }
   .nav-links li {
       opacity: 0;
+  }
+  .nav-links a {
+    font-size: 16px;
   }
   .menu {
       display: block;
@@ -336,7 +339,7 @@ transform: rotate(45deg) translate(-5px, -6px);
     flex-direction: column;
     text-align: center;
   }
-  .cta-about, .cta-contact, .cta-about2 {
+  .cta-about, .cta-contact, .cta-about2, .cta-pdf, .cta-nopdf {
     display: inline-block;
     margin: 10px 10px 10px 10px;
     align-items: center;
