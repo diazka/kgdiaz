@@ -803,7 +803,7 @@ h4 a:hover {
 
 .icon-info {
   display: flex;
-  justify-content: right;
+  /*justify-content: right;*/
   align-items: center;
   padding-bottom: 20px;
 }
